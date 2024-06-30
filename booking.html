@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Локации</title>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+  />
+  <link rel="stylesheet" href="css/style.css">
+  <script
+  src="https://kit.fontawesome.com/359bee18a0.js"
+  crossorigin="anonymous"
+></script>
+
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-default">
+      <img src="img/forlogo/1.jpg" width="100" alt="logo">
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html"
+              >Главная</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="search.html"
+              >Поиск локации</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="seat.html">Выбор зон локации</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="booking.html">Бронирование</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+<main>
+    <section id="">
+        <form class="form">
+          <h2>Оформление заказа</h2>
+          <div class="mb-3">
+            <select
+              name="region"
+              class="form-control"
+            >
+              <option value="s1">Выбор региона</option>
+
+              <option value="s2">Алтайский край</option>
+              <option value="s3">Красноярский край</option>
+            </select>
+          </div>
+          
+          <div class="mb-3">
+            <select
+              name="region"
+              class="form-control"
+            >
+              <option value="s1">Адрес локации</option>
+
+              <option value="s2">
+                Косихинский район, с. Озеро-Красилово, ул. Пушкина д.1
+              </option>
+              <option value="s4">
+                Ачинский район, с. Ключи, Пионерская долина, 5
+              </option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <input
+              type="datetime-local"
+              class="form-control"
+              id="date"
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              type="number"
+              class="form-control"
+              id="people"
+              min="0"
+              max="50"
+              placeholder="Количество человек"
+            />
+          </div>
+            <div class="mb-3">
+            <label for="price" class="form-label">Стоимость</label>
+            <input type="number" class="form-control" id="ptice" />
+            </div>
+
+            <h2>Дополнительные услуги</h2>
+            <div class="uslugi">
+
+            <div class="form-check form-switch">
+             <input
+              class="form-check-input"
+              type="checkbox"
+              id="flexSwitchCheckDefault"
+              role="switch"
+            />
+            <label class="form-check-label" for="flexSwitchCheckDefault"
+              >Организация питания - 500 р/чел</label
+            >
+            </div>
+
+            <div class="form-check form-switch">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              role="switch"
+              id="flexSwitchCheckChecked"
+            />
+            <label class="form-check-label" for="flexSwitchCheckChecked"
+              >Услуги аниматоров - 5000 р/сутки
+            </label>
+            </div>
+
+            <div class="form-check form-switch">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              role="switch"
+              id="flexSwitchCheckDisabled"
+            />
+            <label class="form-check-label" for="flexSwitchCheckDisabled"
+              >Услуги ведущего - 500 р/час
+            </label>
+            </div>
+             <div class="form-check form-switch">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              role="switch"
+              id="flexSwitchCheckCheckedDisabled"
+            />
+            <label class="form-check-label" for="flexSwitchCheckCheckedDisabled"
+              >Услуги детского такси - 50 р + 10 р за каждый км</label
+            >
+            </div>
+          </div>
+          <br>
+          <div class="mb-3">
+            <label for="textarea" class="form-label">Коментарий к заказу</label>
+            <textarea class="form-control" id="textarea" rows="3"></textarea>
+          </div>
+          <div class="mb-3">
+            <input
+              type="email"
+              class="form-control"
+              placeholder="Email"
+              id="email"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="totalcost" class="form-label">Итоговая стоимость</label>
+            <input type="number" class="form-control" id="totalcost" />
+          </div>
+
+          <button type="submit"> 
+            <a href="">Забронировать</a></button>
+            
+        </form>
+      </section>
+
+
+
+
+
+</main>
+
+
+<footer>
+  <p>тел. 8 (800) 111-20-20</p>
+  <a href="http://xxxxxx-m1.wsr.ru">Home </a>
+  <a href="http://xxxxxx-m1.wsr.ru/login">Login </a>
+  <a href="http://xxxxxx-m1.wsr.ru/signup">Sign up </a>
+  <a href="http://xxxxxx-m1.wsr.ru/contact">Contact </a>
+  <a href="http://xxxxxx-m1.wsr.ru/news">News </a>
+  <a href="http://xxxxxx-m1.wsr.ru/return">Return </a>
+  <a href="http://xxxxxx-m1.wsr.ru/feedback">Feedback </a>
+</footer>
+</body>
+</html>
